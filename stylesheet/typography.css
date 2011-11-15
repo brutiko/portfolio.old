@@ -1,0 +1,47 @@
+a {
+  color: #333;
+  font-family: 'Terminal Dosis', Helvetica, Arial;
+  text-decoration: none;
+}
+
+h1 {
+  color: #333;
+  font-family: 'Terminal Dosis', Helvetica, Arial;
+  font-size: 30px;
+}
+
+h3 {
+  color: #666;
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+}
+
+p {
+  color: #444;
+  font-family: 'Minion Pro', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+
+p a {
+  color: #7089BB;
+  font-family: 'Minion Pro', Arial, sans-serif;
+  font-size: 16px;
+}
+
+p a:hover {
+  color: #9D7DE4;
+  text-decoration: underline;
+}
+
+p span {
+  display: block;
+  font-style: italic;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 0 25px;
+  text-align: justify;
+}
