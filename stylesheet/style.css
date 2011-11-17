@@ -16,7 +16,7 @@ body, html {
 
 #content .logo {
   text-indent: -10000px;
-  background: url(../images/nodus-project.png) no-repeat;
+  background: url(/images/nodus-project.png) no-repeat;
   width: 139px;
   height: 139px;
   display: block;
@@ -83,23 +83,23 @@ body, html {
 }
 
 #project.block {
-  background: url(../images/projeto.png) no-repeat;
+  background: url(/images/projeto.png) no-repeat;
 }
 
 #process.block {
-  background: url(../images/processo.png) no-repeat;
+  background: url(/images/processo.png) no-repeat;
 }
 
 #presentation.block {
-  background: url(../images/apresentacao.png) no-repeat;
+  background: url(/images/apresentacao.png) no-repeat;
 }
 
 #theory.block {
-  background: url(../images/teoria.png) no-repeat;
+  background: url(/images/teoria.png) no-repeat;
 }
 
 #reference.block {
-  background: url(../images/referencia.png) no-repeat;
+  background: url(/images/referencia.png) no-repeat;
 }
 
 #content .text aside {
