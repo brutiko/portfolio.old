@@ -8,28 +8,32 @@
     <link rel="stylesheet" type="text/css" href="/stylesheet/960grid.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheet/typography.css" />
     <link rel="stylesheet" type="text/css" href="/stylesheet/style.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
     <title>NODUS - Instalação interativa de rede de relações referencializada na teoria do caos</title>
   </head>
 
   <body>
-    <div id='wrapper' class="container_12 clearfix">
-      <header class="grid_12 clearfix">
+    <div class="wrapper clearfix">
+      <header class="top-bar">
         <h1 class="logo"><a href="/">nodus-project</a></h1>
-        <nav>
-          <ul>
-            <li><a href="/nodus/home.html">Projeto</a></li>
-            <li><a href="/nodus/process.html">Processo</a></li>
-            <li><a href="/nodus/apresentacao.html">Apresentação</a></li>
-            <li><a href="/nodus/introducao.html">Teoria</a></li>
-            <li><a href="/nodus/reference.html">Referência</a></li>
+        <nav class="container_12">
+          <ul class="grid_6 push_3">
+            <li class="first-child-element"><a href="/nodus/home3.html">HOME</a></li>
+            <li><a href="/nodus/project.html">PROJETO</a></li>
+            <li><a href="/nodus/introducao.html">CONCEITO</a></li>
+            <li><a href="/nodus/process.html">PRÁTICO</a></li>
+            <li><a href="/nodus/apresentacao.html">APRESENTAÇÃO</a></li>
+            <li class="last-child-element"><a href="/nodus/reference.html">REFERÊNCIAS</a></li>
           </ul>
         </nav>
       </header>
-      <section id="content" class="grid_12 clearfix">
-        <section id="theory-content" class="text">
-          <aside>
-            <h3>Teoria</h3>
-            <ul>
+      <section id="content" class="clearfix">
+        <section class="theory-content text container_12">
+          <article class="grid_6 push_2">
+            {{ content }}
+          </article>
+          <aside class="grid_4 push_2">
+            <ul class="article-indice">
               <li><a href="">1. Introdução</a></li>
               <li><a href="nodus/o-design.html">2. O design</a></li>
               <li class="tab1"><a href="">2.1. Comunicação</a></li>
@@ -58,9 +62,6 @@
               <li><a href="">7. Bibliografia</a></li>
             </ul>
           </aside>
-          <article>
-            {{ content }}
-          </article>
           <div style='clear: both'></div>
         </section>
       </section>
