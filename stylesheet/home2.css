@@ -1,0 +1,24 @@
+#menu-in {
+  margin-top: 100px;
+}
+
+#menu-in ul {
+  border-left: solid 2px #000;
+  padding-top: 100px;
+  padding-left: 10px;
+}
+
+#menu-in li {
+  display: block;
+  padding-top: 10px;
+}
+
+#menu-in a {
+  font-size: 24px;
+  color: #000;
+}
+
+nav ul {
+  float: none;
+}
+

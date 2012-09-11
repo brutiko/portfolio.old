@@ -1,6 +1,11 @@
+body {
+  font-size: 16px;
+}
+
 a {
-  color: #333;
-  font-family: 'Terminal Dosis', Helvetica, Arial;
+  color: #107FC9;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-size: 16px;
   text-decoration: none;
 }
 
@@ -10,16 +15,28 @@ h1 {
   font-size: 30px;
 }
 
+
 h3 {
-  color: #666;
+  color: #C70189;
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+h4 {
+  color: #333;
   font-family: 'Terminal Dosis', Arial, sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 30px;
+  font-style: normal;
 }
 
 p {
   color: #444;
-  font-family: 'Minion Pro', Arial, sans-serif;
+  font-family: 'Minion Pro', Georgia, sans-serif;
   font-weight: 200;
   font-size: 16px;
   text-align: justify;
@@ -27,13 +44,13 @@ p {
 }
 
 p a {
-  color: #7089BB;
-  font-family: 'Minion Pro', Arial, sans-serif;
+  color: #1C709B;
+  font-family: 'Minion Pro', Georgia, sans-serif;
   font-size: 16px;
+  font-style: italic;
 }
 
 p a:hover {
-  color: #9D7DE4;
   text-decoration: underline;
 }
 
@@ -44,4 +61,50 @@ p span {
   line-height: 20px;
   padding: 0 25px;
   text-align: justify;
+}
+
+nav li a {
+  color: #604878;
+  font-family: 'Terminal Dosis', Helvetica, Arial;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+article p {
+  color: #666;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: left;
+}
+
+article span {
+  color: #333;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+}
+
+blockquote {
+  color: #333;
+  font-size: 24px;
+  font-family: 'Minion Pro', Georgia, sans-serif;
+  line-height: 28px;
+  font-style: italic;
+}
+
+blockquote span {
+  color: #666;
+  font-size: 12px;
+  font-style: normal;
+  text-indent: 10px;
+}
+
+li span {
+  color: #666;
+  font-size: 13px;
+  line-height: 17px;
 }
