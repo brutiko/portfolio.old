@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 h1 {
   color: #333;
   font-family: 'Terminal Dosis', Helvetica, Arial;
@@ -17,10 +21,11 @@ h1 {
 
 
 h3 {
-  color: #C70189;
+/*  color: #C70189;*/
+  color: #480b5b;
   font-family: 'Terminal Dosis', Arial, sans-serif;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 28px;
   font-style: normal;
   line-height: 30px;
   margin-bottom: 10px;
@@ -30,7 +35,7 @@ h4 {
   color: #333;
   font-family: 'Terminal Dosis', Arial, sans-serif;
   font-weight: 200;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
 }
 
@@ -64,36 +69,37 @@ p span {
 }
 
 nav li a {
-  color: #604878;
-  font-family: 'Terminal Dosis', Helvetica, Arial;
-  font-size: 24px;
+  color: #000;
+  font-family: 'Open Sans Condensed', Helvetica, Arial;
+  font-size: 18px;
   text-decoration: none;
 }
 
 article p {
-  color: #666;
+  color: #333;
   font-family: 'Minion Pro', Georgia, sans-serif;
   font-weight: 200;
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
+  text-align: justify;
 }
 
 article span {
   color: #333;
   font-family: 'Minion Pro', Georgia, sans-serif;
   font-weight: 200;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 20px;
-  text-align: left;
+  text-align: justify;
 }
 
 blockquote {
   color: #333;
-  font-size: 24px;
+  font-size: 18px;
   font-family: 'Minion Pro', Georgia, sans-serif;
   line-height: 28px;
   font-style: italic;
+  text-align: justify;
 }
 
 blockquote span {
@@ -107,4 +113,14 @@ li span {
   color: #666;
   font-size: 13px;
   line-height: 17px;
+}
+
+.article-indice a,
+.text aside a {
+  color: #666;
+}
+
+.home-content span {
+  color: #666;
+  font-size: 16px;
 }
