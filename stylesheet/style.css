@@ -80,6 +80,10 @@ nav li {
   background: url(/images/referencia.png) no-repeat;
 }
 
+#content {
+  padding-top: 60px;
+}
+
 #content .text aside {
   height: 100%;
   font-size: 18px;
@@ -228,6 +232,11 @@ blockquote {
 
 .article-indice a:hover {
   text-decoration: none;
+}
+
+.article-indice li small {
+  display: block;
+  margin-top: 20px;
 }
 
 .theory-content {

@@ -117,7 +117,13 @@ li span {
 
 .article-indice a,
 .text aside a {
-  color: #666;
+  color: #107FC9;
+  font-style: italic;
+}
+
+.article-indice small {
+  color: #333;
+  font-size: 16px;
 }
 
 .home-content span {
