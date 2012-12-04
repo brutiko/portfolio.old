@@ -1,10 +1,4 @@
 
-// Global variables
-//float radius = 50.0;
-//int X, Y;
-//int nX, nY;
-//int delay = 16;
-
 PFont font;
 
 int h = 800;
@@ -19,7 +13,6 @@ int fps;
 boolean clearBG, doSmooth;
 int shapeType;
 float maxVelocity = 16, minAccel = 0.8, maxAccel = 1.8;
-//float maxVelocity = 32, minAccel = 2, maxAccel = 4;
 
 float larg;
 float positx;
@@ -29,40 +22,25 @@ Seeker[] ball = new Seeker[numBalls];
 int numPoints = 28;
 PVector[] points = new PVector[numPoints];
 
-/*
-Ball[] myBall;
-int ballAmount = 125;
-int distance = 100;  */
 
 int radius = 15;
 
-int particleCount = 2000; /* ========================================================================== */
+int particleCount = 2000;
 
-Particle[] particles = new Particle[particleCount+1];    /* ========================================================================== */
+Particle[] particles = new Particle[particleCount+1];
 
 
 // Setup the Processing Canvas
 void setup(){
-
-  //size( 400, 400 );
-  //strokeWeight( 10 );
-  //frameRate( 15 );
-  //X = width / 2;
-  //Y = width / 2;
-  //nX = X;
-  //nY = Y;
-
 
   int x,y;
   size(800,600);
 
   img = createImage(800, 600, ARGB);
       for(int i=0; i < img.pixels.length; i++) {
-      //img.pixels[i] = color(201, 206, 167, i%img.width/2);
       x = i%800;
       y = i/800;
       img.pixels[i] = color(217, 215, 210+x/10.0);
-      //img.pixels[i] = color(random(100,255), random(100,255), 210+x/10.0);
       }
 
    colorMode(HSB, 360, 100, 100);
@@ -75,13 +53,6 @@ void setup(){
    doSmooth = false;
    shapeType = 0;
    frameRate(30);
-
-   //opencv = new OpenCV(this);
-   //opencv.capture(h, w);
-   //tentar fazer flip horizontal
-   //opencv.flip(OpenCV.FLIP_HORIZONTAL);
-
-   //motionDetector = new MotionDetector(opencv, 10, 30);
 
    for(int i=0; i<numBalls; i++){
        ball[i] = new Seeker(new PVector(random(width), random(height)));
@@ -108,71 +79,13 @@ void draw(){
     background(0);
     noFill();
 
-    /*colorMode(HSB, 360, 100, 100);
-    //positx=random(w);
-    //posity=random(h);
-    larg=random(1, 10);
-    noStroke();
-    fill(random(115, 285), 85, 85, 70);
-    rect(positx, posity, larg, larg); */
-
     rectMode(CENTER);
 
     for(int i=0; i<numBalls; i++){
-        //ball[i].seek(new PVector(mouseX, mouseY));
-        //ball[i].seek(new PVector(currentMovement.x, currentMovement.y));
         ball[i].seek(new PVector(mouseX, mouseY));
         ball[i].render();
     }
-
-     // Track circle to new destination
-    //X+=(nX-X)/delay;
-    //Y+=(nY-Y)/delay;
-
-    //opencv.read();
-    //tentar reverter em flip
-    //opencv.flip(OpenCV.FLIP_HORIZONTAL);
-
-
-    //image(opencv.image(), 0, 0);
-    //opencv.absDiff();
-    //opencv.blur(OpenCV.BLUR, 30); // Muito blur para evitar blobs de pequenos dedos, p.e
-    //opencv.threshold(motionDetector.getThreshold()); // Grayscale
-
-    //motionDetector.captureMovement(200, w*h/2);
-    //PVector currentMovement = motionDetector.getMovement(1);
-    //println("resultado x:" + .y + " y:" + currentMovement.x);
-    //ellipse(currentMovement.y, currentMovement.x, 10, 10);
-
-
-
-
-  /*-----------------------------------------------red-ball-------------------------------------------------------------*/
- /* radius = radius + sin( frameCount / 4 );
-
-  // Track circle to new destination
-  X+=(nX-X)/delay;
-  Y+=(nY-Y)/delay;
-
-  // Fill canvas grey
-  background( 100 );
-
-  // Set fill-color to blue
-  fill( 0, 121, 184 );
-
-  // Set stroke-color white
-  stroke(255);
-
-  // Draw circle
-  ellipse( X, Y, radius, radius ); */
 }
-
-
-// Set circle's next destination
-/*void mouseMoved(){
-  nX = mouseX;
-  nY = mouseY;
-} */
 
 class Particle {
   float x;
