@@ -34,7 +34,7 @@ Particle[] particles = new Particle[particleCount+1];
 void setup(){
 
   int x,y;
-  size(800,600);
+  size(1024,768);
 
   img = createImage(800, 600, ARGB);
       for(int i=0; i < img.pixels.length; i++) {
