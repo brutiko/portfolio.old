@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta name="keywords" content="Design, Nodus, Chaos, Caos, Instalação, Interaction">
+    <meta name="description" content="Projeto de instalação que questiona a interrelação humana e ela como um meio possível através do Design. A criatividade e a qualidade de cada ser na atual dimensão coletiva">
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/960grid.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/typography.css" />
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+    <link rel="stylesheet" href="assets/stylesheets/site.css.scss" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <script src="assets/javascripts/Processing.js"></script>
+    <title>NODUS - Instalação interativa de rede de relações referencializada na teoria do caos</title>
+
+    <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <!--  
+    <%= stylesheet_link_tag :site %>
+    <%= javascript_include_tag :all %>
+    -->
+  </head>
+
+  <body class="<%= page_classes %>">
+    <header class="top-bar">
+      <h1 class="logo"><a href="/">nodus-project</a></h1>
+      <nav class="container_12">
+        <ul class="grid_6 push_3">
+          <li class="first-child-element"><a href="/nodus/home3.html">HOME</a></li>
+          <li><a href="/nodus/project.html">PROJETO</a></li>
+          <li><a href="/nodus/theory/introducao.html">CONCEITO</a></li>
+          <li><a href="/nodus/process.html">APLICATIVO</a></li>
+          <li><a href="/nodus/apresentacao.html">APRESENTAÇÃO</a></li>
+          <li class="last-child-element"><a href="/nodus/reference.html">REFERÊNCIAS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="content" class="container_12 clearfix">
+      <%= yield %>
+    </section>
+    <footer>
+      <ul>
+        <li>Contato</li>
+        <li>Agradecimentos</li>
+        <li>Dedicatória</li>
+      </ul>
+    </footer>
+  </body>
+</html>
