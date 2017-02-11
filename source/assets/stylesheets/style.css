@@ -126,8 +126,7 @@ nav li {
 }
 
 .article-image-principal {
-  height: 120px;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 20px;
 }
 
@@ -195,17 +194,39 @@ footer {
   margin-bottom: 20px;
 }
 
+#related ul {
+  margin-left: 0;
+  padding: 0;
+}
+
 #related li {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+#related li a {
+  font-size: 20px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  line-height: 24px;
+}
+
+#related li a:hover {
+  color: #604f94;
 }
 
 #related li span {
   display: block;
   margin-top: 5px;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 blockquote {
   margin-bottom: 60px;
+}
+
+#geral {
+  width: 100%;
 }
 
 #geral article {
