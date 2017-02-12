@@ -88,6 +88,7 @@ nav li {
 
 #content {
   padding-top: 100px;
+  margin-bottom: 11em;
 }
 
 #content .text aside {
@@ -142,8 +143,40 @@ nav li {
   margin-bottom: 30px;
 }
 
+.tab ul {
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 40px;
+  padding-left: 0;
+}
+
+.tab li {
+  padding-left: 0; 
+}
+
+.tab-title {
+  margin-top: 30px;
+  display: block;
+}
+
 .tab1 {
-  margin-left: 20px;
+  font-style: normal;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  color: #fff;
+  padding-left: 0; 
+}
+
+.tab1 a {
+  color: #4DB6AC;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
 }
 
 .tab2 {
@@ -303,66 +336,68 @@ footer.wrapper-full {
 
 .social-media-list {
   float: right;
-  padding-top: 112px;
-
-  h2 {
-    color: #ccc;
-    margin: 0 0 10px 10px;
-    font-size: 18px;
-    font-weight: 200;
-    line-height: 26px;
-  }
-
-  ul {
-    padding: 0;
-    margin: 0;
-  }
-
-  li {
-    display: inline-block;
-    text-decoration: none;
-    height: 30px;
-    width: 30px;
-    margin: 0 10px;
-  }
-
-  a {
-    display: block;
-    height: 100%;
-    width: 100%;
-    text-indent: -10000px;
-  }
-
-  a.linkedin-icon { 
-    background-image: url(/images/linkedin-icon.png);
-    background-repeat: no-repeat;
-    background-size: contain; 
-  }
-
-  a.twitter-icon {
-    background-image: url(/images/twitter-icon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  a.medium-icon { 
-    background: url(/images/medium-icon.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  a.github-icon { 
-    background-image: url(/images/github.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  a.speakerdeck-icon {
-    background-image: url(/images/speakerdeck.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
 }
+
+.social-media-list h2 {
+  color: #fff;
+  margin: 0 0 20px 10px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 26px;
+}
+
+.social-media-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.social-media-list li {
+  display: inline-block;
+  text-decoration: none;
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  padding: 0;
+}
+
+.social-media-list a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-indent: -10000px;
+}
+
+.social-media-list a.linkedin-icon { 
+  background-image: url(../images/linkedin-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain; 
+}
+
+.social-media-list a.twitter-icon {
+  background-image: url(../images/twitter-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-media-list a.medium-icon { 
+  background: url(../images/medium-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-media-list a.github-icon { 
+  background-image: url(../images/github.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.social-media-list a.speakerdeck-icon {
+  background-image: url(../images/speakerdeck.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 
 .footer-text {
   margin: 10px auto;
@@ -394,10 +429,56 @@ footer.wrapper-full {
   color: #ccc;
   display: block;
   font-family: "Roboto", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 300;
   float: none;
-  margin: 60px auto 20px;
+  margin: 0 auto 20px;
   text-align: right;
   width: 85%;
 }
+
+#home-contact {
+  margin: auto;
+  width: 85%;
+  padding: 100px 0 0;
+}
+
+.be-contact {
+  float: left;
+}
+
+.be-contact h1 {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+
+.be-contact h2 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.be-contact p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #fff;
+}
+
+.divider {
+  display: block;
+  content: '';
+  width: 3.25em;
+  height: 2px;
+  margin: 0.7em 0 1em 0;
+  border-radius: 2px;
+  background-color: #dddddd;
+  background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+  background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+}
+
+.nodus-subtitle {
+  margin-bottom: 40px;
+}
+
